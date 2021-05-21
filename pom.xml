@@ -117,7 +117,7 @@
         <url>https://github.com/careydevelopment/file-util</url>
     </scm>
 	
-	<distributionManagement>
+    <distributionManagement>
         <snapshotRepository>
             <id>ossrh</id>
             <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
