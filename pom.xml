@@ -2,6 +2,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>us.careydevelopment.ecosystem</groupId>
 	<artifactId>file-util</artifactId>
+	<name>File Util</name>
+	<description>File utilities for the Carey Development ecosystem</description>
+	<url>https://github.com/careydevelopment/file-util</url>
 	<version>1.0.0-RELEASE</version>
 	
 	<dependencies>
@@ -60,6 +63,32 @@
 		          		</goals>
 		      		</execution>
 		    	</executions>
+		    </plugin>
+		    <plugin>
+		    	<groupId>org.apache.maven.plugins</groupId>
+		    	<artifactId>maven-source-plugin</artifactId>
+		    	<version>2.2.1</version>
+		    	<executions>
+		    		<execution>
+		    			<id>attach-sources</id>
+		    			<goals>
+		     				<goal>jar-no-fork</goal>
+		    			</goals>
+		        	</execution>
+		      	</executions>
+		    </plugin>
+		    <plugin>
+		    	<groupId>org.apache.maven.plugins</groupId>
+		    	<artifactId>maven-javadoc-plugin</artifactId>
+		    	<version>2.9.1</version>
+		    	<executions>
+		    		<execution>
+		        		<id>attach-javadocs</id>
+		        		<goals>
+		        			<goal>jar</goal>
+		        		</goals>
+		       		</execution>
+		      	</executions>
 		    </plugin>
         </plugins>
         <finalName>${project.artifactId}</finalName>
